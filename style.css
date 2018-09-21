@@ -1,46 +1,60 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #FF0000;
+  background: url(image/home.jpg) no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 
-div:target {
-    padding-top: 2em;
-    margin-top: -2em;
+header {
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 1000px;
+}
+
+#presentation {
+  background-color: white;
+  height: 1000px;
+}
+
+section:target {
+  padding-top: 2em;
+  margin-top: -2em;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - -*/
 /*        NavBar                                */
 /* - - - - - - - - - - - - - - - - - - - - - - -*/
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 50px;
+  overflow: hidden;
+  background-color: #333;
 }
 
 nav {
-    /* Sticky NavBar */
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+  /* Sticky NavBar */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+  background-color: #111;
 }
 
 .icon {
@@ -72,7 +86,7 @@ li a:hover {
   }
 
   header {
-      padding-top: 2em;
+    padding-top: 2em;
   }
 
   .topnav.responsive .icon {
