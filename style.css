@@ -43,6 +43,10 @@ li a:hover {
     background-color: #111;
 }
 
+.icon {
+  display: none;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - -*/
 /*        Media                                 */
 /* - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -53,7 +57,32 @@ li a:hover {
     left: 0 px;
     width: 100%;
   }
+
   li {
     float: none;
   }
-}
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  header {
+      padding-top: 2em;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
